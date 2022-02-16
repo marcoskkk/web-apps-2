@@ -11,7 +11,7 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.new(params[:contact])
-    @company.save
+    @contact.save
     redirect_to "/companies"
   end
 
